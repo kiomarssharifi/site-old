@@ -5,7 +5,7 @@
 	"description": "Personal page based on reactfolio",
 	"author": {
 		"name": "Kiomars Sharifi",
-		"email": "sharifikiomars@gmail.com",
+		"email": "kiomarssharifi@gmail.com",
 		"url": "https://kiomarssharifi.github.io"
 	},
 	"license": "MIT",
@@ -61,6 +61,6 @@
 		"tabWidth": 4
 	},
 	"devDependencies": {
-		"gh-pages": "^6.1.1"
+		"gh-pages": "^6.0.0"
 	}
 }
