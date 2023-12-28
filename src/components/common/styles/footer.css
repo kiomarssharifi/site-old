@@ -2,9 +2,8 @@
 
 .footer {
 	display: flex;
-	padding-top: 25px;
+	padding-top: 0;
 	margin-top: 50px;
-	padding-bottom: 25px;
 	align-items: center;
 }
 
@@ -21,7 +20,7 @@
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .footer-nav-link-item {
@@ -45,6 +44,13 @@
 	text-align: right;
 }
 
+.subtitle-footer {
+	color: var(--secondary-color);
+	font-size: 16px;
+	line-height: 28px;
+	width: 70%;
+}
+
 @media (max-width: 600px) {
 	.footer {
 		flex-direction: column;
@@ -59,5 +65,13 @@
 
 	.footer-nav-link-list {
 		width: 100%;
+	}
+
+	.subtitle-footer {
+		width: 100%;
+	}
+
+	.footer-credits-text {
+		text-align: center;
 	}
 }

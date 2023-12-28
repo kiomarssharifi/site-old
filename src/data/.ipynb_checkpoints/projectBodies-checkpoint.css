@@ -1,0 +1,24 @@
+.heading-1 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000000;
+}
+
+.image-1 {
+	width: 600px;
+}
+
+.image-2 {
+	width: 400px;
+}
+
+@media (max-width: 1024px) {
+	.image-1 {
+		width: 100%;
+	}
+
+	.image-2 {
+		width: 100%;
+	}
+}

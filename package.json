@@ -1,11 +1,12 @@
 {
-	"name": "reactfolio",
+	"name": "kiomars_personal",
 	"version": "1.1.0",
-	"description": "Personal portfolio template built using Reactjs",
+	"homepage": "https://kiomarssharifi.github.io",
+	"description": "Personal page based on reactfolio",
 	"author": {
-		"name": "Tharindu N. Madhusanka",
-		"email": "mail@tharindu.dev",
-		"url": "https://tharindu.dev"
+		"name": "Kiomars Sharifi",
+		"email": "sharifikiomars@gmail.com",
+		"url": "https://kiomarssharifi.github.io"
 	},
 	"license": "MIT",
 	"private": true,
@@ -22,12 +23,16 @@
 		"react-dom": "^18.2.0",
 		"react-ga4": "^2.1.0",
 		"react-helmet": "^6.1.0",
-		"react-router-dom": "^6.11.1",
-		"react-scripts": "5.0.1",
+		"react-medium-image-zoom": "^5.1.8",
+		"react-router-dom": "^6.20.0",
+		"react-router-hash-link": "^2.4.3",
+		"react-scripts": "^5.0.1",
 		"styled-components": "^5.3.10",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
@@ -54,5 +59,8 @@
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1"
 	}
 }

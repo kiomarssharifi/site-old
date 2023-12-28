@@ -1,10 +1,17 @@
 @import "../../data/styles.css";
 
+.title-and-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Corrected property and set to flex-start */
+}
+
+
 .homepage-logo-container {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-top: 130px;
+	padding-top: 80px;
 }
 
 .homepage-container {
@@ -15,6 +22,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-basis: 50%;
+	order: 0;
 }
 
 .homepage-first-area-left-side {
@@ -27,6 +36,10 @@
 	width: 85% !important;
 }
 
+.homepage-title-others {
+	width: 30% !important;
+}
+
 .homepage-subtitle {
 	width: 85% !important;
 }
@@ -34,17 +47,18 @@
 .homepage-first-area-right-side {
 	display: flex;
 	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex-basis: 50%;
 }
 
 .homepage-image-container {
 	width: 370px;
-	height: 370px;
 }
 
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
-	transform: rotate(3deg);
 }
 
 .homepage-image-wrapper img {
@@ -53,9 +67,9 @@
 
 .homepage-socials {
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
-	padding-top: 30px;
+	margin-top: 10px;
 }
 
 .homepage-social-icon {
@@ -103,13 +117,18 @@
 		flex-direction: column; /* Changed: set direction to column */
 		align-items: flex-start;
 		width: 100%;
-		order: 2;
+		order: 1;
 	}
 
 	.homepage-title {
 		width: 100% !important;
 		margin-top: 20px;
 		order: 2;
+	}
+
+	.homepage-title-others {
+		width: 100% !important;
+		margin-top: 20px;
 	}
 
 	.homepage-subtitle {
@@ -120,12 +139,17 @@
 
 	.homepage-first-area-right-side {
 		width: 100%;
-		order: 1;
+		order: 2;
+	}
+
+	.homepage-socials {
+		width: 100%;
+		margin-top: 10px;
+		order: 3;
 	}
 
 	.homepage-image-container {
 		padding-top: 50px;
-		padding-bottom: 50px;
 		margin-left: 10px;
 		order: 1;
 	}
@@ -144,7 +168,7 @@
 
 	.homepage-works {
 		flex-basis: auto;
-		margin-left: -25px;
-		margin-right: -25px;
+		margin-left: 25px;
+		margin-right: 25px;
 	}
 }

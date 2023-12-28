@@ -58,7 +58,7 @@ const Articles = () => {
 										<Article
 											key={(index + 1).toString()}
 											date={article().date}
-											title={article().title}
+											title={<div dangerouslySetInnerHTML={{ __html: article().title }} />}
 											description={article().description}
 											link={"/article/" + (index + 1)}
 										/>
